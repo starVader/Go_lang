@@ -23,9 +23,9 @@ func main(){
 		}
 		return false
 	}
-	arr:= []int{}
+	arr:= []int{1,2,3,4,5,6,7,8}
 	fmt.Println(arr)
-	result:= make([]interface{},0)
+	result:= make([]interface{},0)//Slice
 	fmt.Println(Filter(arr[:],even,0,result))
 
 }

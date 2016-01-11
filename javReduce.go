@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 
-func Reduce(data []int,f func (int, int) int,curr int, index int,result int) int{
+func Reduce(data []int,f func (int, int) int,curr int, index int,result int) interface	{}{
 	if index > (len(data) -1){
 		fmt.Println("Recursion done :)")
 		return result
@@ -14,7 +14,7 @@ func Reduce(data []int,f func (int, int) int,curr int, index int,result int) int
 	result = f(data[curr],result)
 	//fmt.Println(result)
 	index++
-	return Reduce(data[:],f,curr,index,result)
+	return Reduce(data[:],f,curr,index,result
 }
 
 func main() {
