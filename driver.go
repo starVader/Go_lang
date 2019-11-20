@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Golang-eulers/stringutils"
 	"fmt"
+	"github.com/Go_lang-Basics/stringutils"
 )
 
 func main() {
